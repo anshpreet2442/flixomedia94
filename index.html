@@ -23,7 +23,38 @@
       color: #fff; /* text color in the selected area */
     }
   </style>
-      
+      <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        #video-background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1000;
+            background-size: cover;
+        }
+        #content {
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <video id="video-background" autoplay loop muted>
+        <source src="https://images.all-free-download.com/footage_preview/mp4/wild_coconut_trees_swinging_in_wind_6891998.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
       <style>
           body {
               margin: 0;
