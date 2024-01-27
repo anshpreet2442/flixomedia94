@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flixomedia Download</title>
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#FFA500"> <!-- Set the theme color to orange (#FFA500) -->
+   <link rel="icon" type="image/x-icon" href="https://pixeldrain.com/api/file/ZqmXAN58">
+  <meta name="description" content="Page by Anshpreet">
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+          body {
+              margin: 0;
+              padding: 0;
+          }
+
+          #header-logo {
+              position: fixed;
+              top: 0;
+              left: 0;
+              z-index: 1000;
+              cursor: pointer;
+          }
+
+          #validity-info {
+              display: none;
+              position: fixed;
+              top: 40px;
+              left: 10px;
+              background-color: #ffffff;
+              padding: 10px;
+              border: 1px solid #ccc;
+              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+              z-index: 1000;
+          }
+      </style>
+  </head>
+  <body>
+
+      <div id="header-logo">
+          <img src="https://pixeldrain.com/api/file/ZqmXAN58" alt="Logo" width="100" height="100" onclick="showValidityInfo()">
+      </div>
+
+      <div id="validity-info">
+          <p><li>No VALID Date</li></p>
+          <p>Come back here to Extend Validity on 1 January 2025</p>
+          <span onclick="hideValidityInfo()">Close</span>
+      </div>
+
+      <script>
+          function showValidityInfo() {
+              document.getElementById('validity-info').style.display = 'block';
+          }
+
+          function hideValidityInfo() {
+              document.getElementById('validity-info').style.display = 'none';
+          }
+      </script>
+
+  </body>
+  </html>
+
+
+
+
+  
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 20px;
+          background-color: #f0f0f0;
+      }
+
+      .container {
+          max-width: 600px;
+          margin: auto;
+          background-color: #fff;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          padding: 20px;
+          border-radius: 10px;
+          text-align: center;
+      }
+
+      h1 {
+          color: #3498db;
+      }
+
+      .description-box {
+          background-color: #ecf0f1;
+          padding: 15px;
+          border-radius: 5px;
+          margin-bottom: 20px;
+          text-align: left;
+      }
+
+      #download-links {
+          list-style: none;
+          padding: 0;
+          text-align: center;
+      }
+
+      .download-link {
+          display: inline-block;
+          position: relative;
+          appearance: none;
+          border: none;
+          outline: none;
+          padding: 1.33vw 1.66vw;
+          text-rendering: geometricPrecision;
+          font-family: system-ui;
+          font-smooth: always;
+          font-weight: 600;
+          font-size: 1.8vw;
+          overflow: hidden;
+          border-radius: 1vw;
+          box-shadow: 0 5px 10px rgba(124, 125, 190, 0.33), 0 5px 20px rgba(124, 125, 190, 0.22), 0 10px 50px rgba(124, 125, 190, 0.22);
+          background: conic-gradient(
+              from 0deg at 50% 50%, 
+              #D3D7E9 0%, 
+              #B3B6E3 5%,
+              #CEB8EC 10%,
+              #B0CBDA 15%,
+              #D5E5EC 20%,
+              #B3B6E3 25%,
+              #AED8D5 30%,
+              #C8E1DE 35%,
+              #AED8D5 40%,
+              #A3CEDB 45%,
+              #D3D7E9 50%,
+              #C8E1DE 55%,
+              #A2CDD8 60%,
+              #C1E2DA 70%,
+              #A3CEDB 75%,
+              #E5F4FA 80%,
+              #D5E5EC 85%,
+              #D1D3E4 90%,
+              #D3D7E9 95%,
+              #D3D7E9 100%
+          );
+          transition: all 0.18s ease-in-out;
+          margin: 5px;
+          text-decoration: none; /* Remove hyperlink styling */
+          color: #fff; /* Set text color to white */
+          user-select: none; /* Disable text selection */
+          cursor: pointer; /* Set cursor to pointer on hover */
+      }
+
+      .download-link:before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 1;
+          background: 
+              conic-gradient(
+                  from var(--start-angle) at 50% 50%,
+                  #E4E7F7 0%,
+                  #FFFFFF00 5%,
+                  #FFFFFF00 20%,
+                  #F2F4FC 25%,
+                  #FFFFFF00 30%,
+                  #FFFFFF00 40%,
+                  #E4E7F7 45%,
+                  #FFFFFF00 50%,
+                  #FFFFFF00 70%,
+                  #F2F4FC 75%,
+                  #FFFFFF00 80%,
+                  #FFFFFF00 95%,
+                  #E4E7F7 100%
+              );
+          animation: rotateBack 0.33s ease-in-out forwards;
+          transition: all 0.18s ease-in-out;
+      }
+
+      .download-link:hover {
+          box-shadow: 0 5px 10px rgba(124, 125, 190, 0.33), 0 10px 40px rgba(124, 125, 190, 0.22);
+          &:before {
+              opacity: .66;
+              animation: rotateTo 0.33s ease-in-out forwards;
+          }
+      }
+  </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <h1>Flixomedia Download</h1>
+
+        <div class="description-box">
+            <p>
+                <strong>Version:</strong> 3.62<br>
+                <strong>Features:</strong>
+                <ul>
+                    <li>Download YouTube Video</li>
+                    <li>Play YouTube Video in background</li>
+                    <li>Miniplayer</li>
+                    <li>No Ads</li>
+                    <li>Automatic Dark Mode</li>
+                    <li>Responsive</li>
+                    <li>Download YouTube Music</li>
+                </ul>
+            </p>
+        </div>
+       <div class="container">
+      <button id="generate-links-btn" class="neumorphic" onclick="generateLinks()">
+              <i class="fas fa-link"></i>
+              <span>Generate Links</span> ♪
+          </button>   <h1>GENERATE LINKS</h1>
+      </div>
+      
+       <script src="https://pro.fontawesome.com/releases/v6.0.0-beta1/js/all.js" integrity="sha384-eokR8Rj6BtHj0s97FjlSLeT5RDO2yy6zRpiq0BrE0eFqYAwb3axTlRg3ObvTLMbZ" crossorigin="anonymous"></script>
+
+        <ul id="download-links"></ul>
+    </div>
+
+    <script>
+        function generateLinks() {
+            const serverNames = [
+                "FilesHost",
+                "Pixeldrain",
+                "Smash Server",
+                "Send Cm Server",
+                "Google Drive Server",
+                "Transh Server",
+                "4sync Server",
+                "Mega Server"
+            ];
+
+            const downloadLinks = [
+                "https://file.io/3adxgx6OAFLX",
+                "https://pixeldrain.com/u/TXVY9dwY",
+                "https://fromsmash.com/FLIXOMEDIA-362",
+                "https://send.cm/d/nDDV",
+                "https://drive.google.com/uc?export=download&id=1L_4QFE856-77j-uhRgfoeSDqmRQI0hDO",
+                "https://transfer.sh/hspY3JN1OC/Flixomedia%203.62-3.9.80.110.apk",
+                "https://www.4sync.com/web/directDownload/Estd5cVW/vctZxL_q.56907894d5d6d40182c94b2b69db916f",
+                "https://mega.nz/file/qB9jERhA#e8Tp6M5UVdFpsBjqtCzeFOF69QNjk_fIYMVDj-cYXFA"
+            ];
+
+            const downloadList = document.getElementById("download-links");
+
+            // Clear existing links
+            downloadList.innerHTML = "";
+
+            // Add links with animation
+            downloadLinks.forEach((link, index) => {
+                setTimeout(() => {
+                    const li = document.createElement("li");
+                    const a = document.createElement("a");
+                    a.classList.add("download-link");
+                    a.href = link;
+                    a.target = "_blank";
+                    a.innerText = `${serverNames[index]} Download Link`;
+                    li.appendChild(a);
+                    downloadList.appendChild(li);
+                }, index * 500); // Add a delay for animation
+            });
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #custom-context-menu {
+            display: none;
+            position: fixed;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            z-index: 1000;
+        }
+
+        #custom-context-menu button {
+            display: block;
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 5px;
+            text-align: left;
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body oncontextmenu="showContextMenu(event); return false;">
+
+    <div id="custom-context-menu">
+        <button onclick="showDuplicatesTab()">Developed By Anshpreet - Duplicates Tab</button>
+        <button onclick="shareOnWhatsApp()">Share</button>
+        <button onclick="closeBrowser()">Close</button>
+        <button disabled id="show-time"></button>
+        <button disabled id="countdown-to-december"></button>
+    </div>
+
+    <script>
+        function showContextMenu(event) {
+            event.preventDefault();
+            const contextMenu = document.getElementById('custom-context-menu');
+            contextMenu.style.display = 'block';
+            contextMenu.style.top = event.clientY + 'px';
+            contextMenu.style.left = event.clientX + 'px';
+
+            updateTimeAndCountdown();
+        }
+
+        function hideContextMenu() {
+            document.getElementById('custom-context-menu').style.display = 'none';
+        }
+
+        function showDuplicatesTab() {
+            // Add your functionality for "Developed By Anshpreet - Duplicates Tab" here
+            alert('Functionality for Duplicates Tab');
+        }
+
+        function shareOnWhatsApp() {
+            // Add your functionality for "Share" here
+            window.open('https://wa.me/?text=https://etus.link/flixopedia', '_blank');
+        }
+
+        function closeBrowser() {
+            // Add your functionality for "Close" here
+            window.close();
+        }
+
+        function updateTimeAndCountdown() {
+            const showTimeButton = document.getElementById('show-time');
+            const countdownButton = document.getElementById('countdown-to-december');
+
+            const currentTime = new Date();
+            showTimeButton.innerText = `Current Time: ${currentTime.toLocaleTimeString()}`;
+
+            const targetDate = new Date('2024-12-31');
+            const countdown = Math.ceil((targetDate - currentTime) / (1000 * 60 * 60 * 24));
+            countdownButton.innerText = `Countdown to 31 December: ${countdown} days`;
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    body {
+        background-color: #e5e9f4;
+        padding: 2rem;
+    }
+
+    h1 {
+        text-align: center;
+        color: hsl(0 0% 10%);
+        font-family: system-ui, sans-serif;
+        font-size: 3rem;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: auto;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    #generate-links-btn {
+        container-type: inline-size;
+        aspect-ratio: 1/1;
+        border: 0.5rem solid transparent;
+        border-radius: 1rem;
+        color: hsl(0 0% 10%);
+        background: none;
+        display: grid;
+        place-content: center;
+        gap: 1rem;
+        --shadow:
+            -.5rem -.5rem 1rem hsl(0 0% 100% / .75),
+            .5rem .5rem 1rem hsl(0 0% 50% / .5);
+        box-shadow: var(--shadow);
+        outline: none;
+        transition: all 0.1s;
+
+        &:hover, &:focus-visible {
+            color: hsl(10 80% 50%);
+            scale: 1.1
+        }
+
+        &:active, &.active {
+            box-shadow:
+                var(--shadow),
+                inset .5rem .5rem 1rem hsl(0 0% 50% / .5),
+                inset -.5rem -.5rem 1rem hsl(0 0% 100% / .75);
+            color: hsl(10 80% 50%);
+        }
+
+        > i {
+            font-size: 31cqi;
+        }
+
+        > span {
+            font-family: system-ui, sans-serif;
+            font-size: 16cqi;
+        }
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
